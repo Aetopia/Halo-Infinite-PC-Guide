@@ -4,7 +4,7 @@ This section is concerned with maximizing in game performance with no concern fo
 Check [Visual Quality Tweaks](Visual-Quality-Tweaks.md) for graphical fidelity tweaks.
 
 ## Optimize In Game Settings
-
+> [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
 > - [x] Microsoft Store
@@ -14,7 +14,7 @@ Simply do the following:
 2. If there are any UI/Visual Graphical options that can turned off, **turn them off!**.
 
 ## Removal of High Resolution Texture Packs
-
+> [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
 > - [x] Microsoft Store
@@ -30,7 +30,7 @@ The High Resolution Texture Packs ship with the game are know to cause stutterin
 
 ## Aggressive Dynamic Resolution Scaling
 
-
+> [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
 > - [x] Microsoft Store

@@ -1,6 +1,6 @@
 # Visual Quality Tweaks
 This section is concerned with providing tweaks that can help to enhance the graphical fidelity of the game.
-
+> [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
 > - [x] Microsoft Store
@@ -9,7 +9,7 @@ This section is concerned with providing tweaks that can help to enhance the gra
 If you are having an NVIDIA GPU, you may avail the following techonlogies to improve visual quality:<br>
 
 - **NVIDIA Image Sharpening**
-    
+    > [!NOTE]
     > Applies a sharpness filter to the target application to improve visual quality.
     To use image sharpening do the following:<br>
 
@@ -25,16 +25,11 @@ If you are having an NVIDIA GPU, you may avail the following techonlogies to imp
     4. Configure the sharpness and film grain values for the game.
 
 - **NVIDIA Image Scaling**
-    
-    > This is a proper upscaling technology shipped by the NVIDIA Driver, supposed to be a successor to NVIDIA Image Sharpening.
-
-    1. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
-    2. Enable NVIDIA Image Scaling and also **enable** the overlay indicator.
-    3. Configure the sharpness values for the game.
-
     > [!NOTE]
-    > It's possible to even use Scaling Resolutions.<br>
-    > Use refer to the [Modifications](Modifications.md) page.
+    > This is a proper upscaling technology shipped by the NVIDIA Driver, supposed to be a successor to NVIDIA Image Sharpening.
+    > 1. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
+    > 2. Enable NVIDIA Image Scaling and also **enable** the overlay indicator.
+    > 3. Configure the sharpness values for the game.
 
 - **Negative LOD Bias**
     > [!IMPORTANT]
@@ -59,8 +54,5 @@ One may leverage the following technologies to improve visual quality:<br>
 
 - AMD Radeon™ Image Sharpening
 - AMD Radeon™ Super Resolution
-    
-    > This feature requires the game to be running at a lower display resolution.<br>
-        Use [ZetaLoader](#zetaloader)'s User Specified Display Mode to use RSR. 
 
 Each feature may be enabled globally or for the game specifically.
