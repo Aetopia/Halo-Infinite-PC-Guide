@@ -21,7 +21,7 @@ If you are having an NVIDIA GPU, you may avail the following techonlogies to imp
             ```
         2. Find a value called `EnableGR535` and set its value to `0`.<br>
             This will replace Image Scaling with Image Sharpening in the NVIDIA Control Panel.
-    3. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
+    3. Open up the NVIDIA Control Panel → Manage 3D Settings → Program Settings → Halo Infinite.
     4. Configure the sharpness and film grain values for the game.
 
 - **NVIDIA Image Scaling**
