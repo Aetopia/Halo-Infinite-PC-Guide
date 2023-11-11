@@ -27,9 +27,10 @@ If you are having an NVIDIA GPU, you may avail the following techonlogies to imp
 - **NVIDIA Image Scaling**
     > [!NOTE]
     > This is a proper upscaling technology shipped by the NVIDIA Driver, supposed to be a successor to NVIDIA Image Sharpening.
-    > 1. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
-    > 2. Enable NVIDIA Image Scaling and also **enable** the overlay indicator.
-    > 3. Configure the sharpness values for the game.
+    
+    1. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
+    2. Enable NVIDIA Image Scaling and also **enable** the overlay indicator.
+    3. Configure the sharpness values for the game.
 
 - **Negative LOD Bias**
     > [!IMPORTANT]
