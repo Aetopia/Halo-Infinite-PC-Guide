@@ -2,7 +2,7 @@
 This section covers about modifications for the game that can potentially either help to fix certain technical issues, improve performance or provide QOL features.
 > [!WARNING]
 > **One major concern for many would be that the Arbiter Anticheat will kick in and issue punishments.**<br>
-> **The following modifications which have been listed here, have been tested and work totally fine with the anticheat.**
+> **The following modifications which have been listed here, have been tested and work totally fine with the anticheat.**<br>
 > **It is advised to use the following with caution and at your own risk.**<br>
 > **If you still have concerns about this, avoid this page entirely.**
 
