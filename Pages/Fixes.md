@@ -4,6 +4,15 @@ This section is concerned with addressing certain technical issues affecting Hal
 ## Multiplayer Startup Crashing Fix
 If you are crashing continuously when starting up Halo Infinite then the following fix might help.
 
+### Why is the game crashing?
+The reason seems to be access violations (An access violation simply means the game was trying to access an invalid memory address.) causing the game to crash.
+
+The issue also seems to lie within the application manifest (An application manifest is additional metadata that dictates how Windows should handle an application's startup.).
+
+In particular the [\<heapType>](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-manifests#heaptype) attribute seems to be causing this issue.
+
+[You may check this reddit post for more details.](https://www.reddit.com/r/halo/comments/17ff7dc/potential_fix_for_crashing_upon_halo_infinite/)
+
 ### Fix
 Run the following commands in a PowerShell window to patch the Multiplayer's Instance's Application Manifest.
 
@@ -47,12 +56,3 @@ ForEach-Object {
 
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
 ```
-
-#### Why is the game crashing?
-The reason seems to be access violations (An access violation simply means the game was trying to access an invalid memory address.) causing the game to crash.
-
-The issue also seems to lie within the application manifest (An application manifest is additional metadata that dictates how Windows should handle an application's startup.).
-
-In particular the \<heapType> attribute seems to be causing this issue.
-
-[You may check this reddit post for more details.](https://www.reddit.com/r/halo/comments/17ff7dc/potential_fix_for_crashing_upon_halo_infinite/)
