@@ -16,6 +16,12 @@ In particular the [**`<heapType>`**](https://learn.microsoft.com/en-us/windows/w
 ### Fix
 Run the following commands in a PowerShell window to patch the Multiplayer's Instance's Application Manifest.
 
+Here the following is happening:
+1. Instead of just removing the **`<heapType>`** attribute the entire application is removed to just play it safe.
+2. Without the application manifest, the game's window is now DPI Unaware which may cause issues with window sizing on High DPI displays.<br>
+    To fix this, ZetaLoader is installed which makes a call to `SetProcessDpiAwarenessContext(DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE)` which applies Per Monitor DPI Awareness which Halo Infinite's Multiplayer uses through its application manifest.
+
+
 ```powershell
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
 
