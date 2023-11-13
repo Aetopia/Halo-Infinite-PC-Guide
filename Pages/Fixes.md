@@ -5,7 +5,7 @@ This section is concerned with addressing certain technical issues affecting Hal
 If you are crashing continuously when starting up Halo Infinite then the following fix might help.
 
 ### Why is the game crashing?
-The reason seems to be access violations (An access violation simply means the game was trying to access an invalid memory address.) causing the game to crash.
+The reason seems to be [access violations](# "An access violation simply means the game was trying to access an invalid memory address.") causing the game to crash.
 
 The issue also seems to lie within the application manifest (An application manifest is additional metadata that dictates how Windows should handle an application's startup.).
 
