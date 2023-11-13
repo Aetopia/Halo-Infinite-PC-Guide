@@ -9,7 +9,7 @@ The reason seems to be access violations (An access violation simply means the g
 
 The issue also seems to lie within the application manifest (An application manifest is additional metadata that dictates how Windows should handle an application's startup.).
 
-In particular the [\<heapType>](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-manifests#heaptype) attribute seems to be causing this issue.
+In particular the [**`<heapType>`**](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-manifests#heaptype) attribute seems to be causing this issue.
 
 [You may check this reddit post for more details.](https://www.reddit.com/r/halo/comments/17ff7dc/potential_fix_for_crashing_upon_halo_infinite/)
 
