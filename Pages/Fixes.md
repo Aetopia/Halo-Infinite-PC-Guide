@@ -7,7 +7,7 @@ If you are crashing continuously when starting up Halo Infinite then the followi
 ### Fix
 Run the following commands in a PowerShell window to patch the Multiplayer's Instance's Application Manifest.
 
-```ps
+```powershell
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
 
 Add-Type -TypeDefinition @"
