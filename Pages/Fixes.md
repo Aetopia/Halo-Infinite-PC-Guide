@@ -2,6 +2,12 @@
 This section is concerned with addressing certain technical issues affecting Halo Infinite.
 
 ## Multiplayer Startup Crashing Fix
+> [!IMPORTANT]
+> **Supported Platforms**
+> - [x] Steam
+> - [ ] Microsoft Store
+
+
 If you are crashing continuously when starting up Halo Infinite then the following fix might help.
 
 ### Why is the game crashing?
@@ -61,6 +67,11 @@ $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
 ```
 
 ## Skipping Intro Videos
+> [!IMPORTANT]
+> **Supported Platforms**
+> - [x] Steam
+> - [ ] Microsoft Store
+
 This fix will allow you to skip any intro videos, the game plays at startup.
 
 ### Fix
