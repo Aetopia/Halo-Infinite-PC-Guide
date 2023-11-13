@@ -23,7 +23,7 @@ Index
 |1|[Performance](Pages/Performance.md)|This section is concerned with maximizing in game performance with no concern for graphical fidelity.|
 |2|[Visual Quality Tweaks](Pages/Visual-Quality-Tweaks.md)|This section is concerned with providing tweaks that can help to enhance the graphical fidelity of the game.|
 |3|[Modifications](Pages/Modifications.md)|This section covers about modifications for the game that can potentially either help to fix certain technical issues, improve performance or provide QOL features.|
-|4|[Fixes](Pages\Fixes.md)|This section is concerned with addressing certain technical issues affecting Halo Infinite.|
+|4|[Fixes](Pages/Fixes.md)|This section is concerned with addressing certain technical issues affecting Halo Infinite.|
 
 
 
