@@ -24,7 +24,6 @@ Here the following is happening:
 
 ```powershell
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
-
 Add-Type -TypeDefinition @"
 using System;
 using System.Runtime.InteropServices;
@@ -41,7 +40,6 @@ public class Kernel32
     public static extern bool EndUpdateResource(IntPtr hUpdate, bool fDiscard);
 }
 "@
-
 Get-Content  "$(Split-Path $(([string]((Get-ItemPropertyValue `
 -Path "Registry::HKEY_CLASSES_ROOT\steam\Shell\Open\Command" `
 -Name "(Default)") `
@@ -59,6 +57,24 @@ ForEach-Object {
         }
     } 
 }
-
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
+```
+
+## Skipping Intro Videos
+This fix will allow you to skip any intro videos, the game plays at startup.
+
+### Fix
+To skip the intro videos, we simply replace them with empty files resulting in the videos to be skipped.
+
+```powershell
+$ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
+Get-Content  "$(Split-Path $(([string]((Get-ItemPropertyValue `
+-Path "Registry::HKEY_CLASSES_ROOT\steam\Shell\Open\Command" `
+-Name "(Default)") `
+-Split "-", 2, "SimpleMatch")[0]).Trim().Trim('"')))\config\libraryfolders.vdf" | 
+ForEach-Object { 
+    @("intro.mp4" , "Startup_Sequence_Loading.mp4") |
+    ForEach-Object { [void] (New-Item "$Path\videos\$_" -Force) }
+}
+$ProgressPreference = $ErrorActionPreference = "Continue"
 ```
