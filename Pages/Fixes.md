@@ -69,7 +69,7 @@ Get-Content "$(Split-Path $(((Get-ItemPropertyValue -Path "Registry::HKEY_CLASSE
 ForEach-Object { 
     if ($_ -like '*"path"*') {
         $Path = "$($_.Trim().Trim('"path"').Trim().Trim('"').Replace("\\", "\"))\steamapps\common\Halo Infinite\game\HaloInfinite.exe" 
-        if (Test-Path $Path -ErrorAction SilentlyContinue) {
+        if (Test-Path $Path -ErrorAction SilentlyContinue -PathType Leaf) {
             $Text = ""
             $hModule = [Kernel32]::LoadLibraryEx($Path , [IntPtr]::Zero, 0x00000002)
             $hUpdate = [Kernel32]::BeginUpdateResource($Path, $false)
