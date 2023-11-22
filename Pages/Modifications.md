@@ -1,6 +1,6 @@
 #  Modifications
 This section covers about modifications for the game that can potentially either help to fix certain technical issues, improve performance or provide QOL features.
-> [!CAUTION]
+> [!WARNING]
 > **One major concern for many would be that the Arbiter Anticheat will kick in and issue punishments.**<br>
 > **The following modifications which have been listed here, have been tested and work totally fine with the anticheat.**<br>
 > **It is advised to use the following with caution and at your own risk.**<br>
@@ -11,16 +11,16 @@ This section covers about modifications for the game that can potentially either
 Special K is an extension game modifying framework for indepth tweaking of games.<br>
 This provides a feature rich toolset which can cater in accordance of your needs.
 
-## Installation
+### Installation
 There are 2 installation methods:
 
-### 1. [SKIF (Special K Injection Frontend)](https://wiki.special-k.info/SpecialK/Global#technical-info)
+#### 1. [SKIF (Special K Injection Frontend)](https://wiki.special-k.info/SpecialK/Global#technical-info)
 > [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
 > - [x] Microsoft Store
 
-### 2. [Local Install](https://wiki.special-k.info/en/SpecialK/Local) **(⭐ Recommended)**
+#### 2. [Local Install](https://wiki.special-k.info/en/SpecialK/Local) **(⭐ Recommended)**
 > [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
@@ -36,11 +36,10 @@ There are 2 installation methods:
 ### Features
 Since Special K has an expansive feature set, this section will only be concerned with useful features for Halo Infinite.
 
-
 > If you want to check or mess with settings within Special-K check out its [wiki](https://wiki.special-k.info).
 
 > [!WARNING]
-> Changing certain settings within Special K could potentially impact performance or cause undefined behavior in the game. <br>
+> Changing certain settings within Special K could potentially impact performance or cause undefined behavior in the game.<br>
 > Because of this, consider referring to Special K's wiki beforehand on a specific feature.
 
 <img src="../Images/SK.png">
@@ -69,62 +68,62 @@ Refer to [Special K's wiki page on Latent Sync](https://wiki.special-k.info/en/A
 
 A tiny and open source modification/patch for Halo Infinite that aims to fix and improve some aspects of the game which include:<br>
 
-1. Borderless Fullscreen:<br>
-    Fixes issues with the game's borderless fullscreen implementation not filling the screen correctly at certain resolutions.
+#### 1. Borderless Fullscreen:<br>
+Fixes issues with the game's borderless fullscreen implementation not filling the screen correctly at certain resolutions.
 
-    > [!WARNING]
-    > **Due to the way, how ZetaLoader implements Borderless Fullscreen, the following options will not work properly**:
-    >
-    > |Setting|
-    > |-|
-    > |Display Monitor|
-    > |Limit Inactive Framerate|
-    > |Inactive Mute|
-    > |V-Sync|
-    > |Maximum Framerate|
-    >
-    > Because of this, consider using alternatives for the options listed here:
-    >
-    > |Setting|Alternative|
-    > |-|-|
-    > |V-Sync|Driver Based V-Sync|
-    > |Maximum Framerate| External Framerate Limiter|
-    > |Limit Inactive Framerate| Background Application Max Frame Rate (**NVIDIA Only!**)|
+> [!WARNING]
+> **Due to the way, how ZetaLoader implements Borderless Fullscreen, the following options will not work properly**:
+>
+> |Setting|
+> |-|
+> |Display Monitor|
+> |Limit Inactive Framerate|
+> |Inactive Mute|
+> |V-Sync|
+> |Maximum Framerate|
+>
+> Because of this, consider using alternatives for the options listed here:
+>
+> |Setting|Alternative|
+> |-|-|
+> |V-Sync|Driver Based V-Sync|
+> |Maximum Framerate| External Framerate Limiter|
+> |Limit Inactive Framerate| Background Application Max Frame Rate (**NVIDIA Only!**)|
 
-2. Jittery Mouse Input Fix:
+#### 2. Jittery Mouse Input Fix:
 
-    Fixes jittery mouse input when an external framerate limiter is used.
+Fixes jittery mouse input when an external framerate limiter is used.
 
-    > [!NOTE]
-    > Setting the game's process priority to `HIGH` will negate this fix.   
-    >     
-    > Reference: https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities
-    > 
-    > Issue + Fix Demonstration: https://www.youtube.com/watch?v=4pJd-dKW7WY  
+> [!NOTE]
+> Setting the game's process priority to `HIGH` will negate this fix.   
+>     
+> Reference: https://learn.microsoft.com/en-us/windows/win32/procthread/scheduling-priorities
+> 
+> Issue + Fix Demonstration: https://www.youtube.com/watch?v=4pJd-dKW7WY  
 
 
 
-3. User Specified Display Mode:
-    > [!NOTE]
-    > User Specified Display Mode in Action: https://www.youtube.com/watch?v=FnzN4xTO6UA
+#### 3. User Specified Display Mode:
+> [!NOTE]
+> User Specified Display Mode in Action: https://www.youtube.com/watch?v=FnzN4xTO6UA
 
-    User Specified Display Mode provides Halo Infinite with the facility to have the game's window run at any arbitrary display mode of the user's choice as long as it is valid.
+User Specified Display Mode provides Halo Infinite with the facility to have the game's window run at any arbitrary display mode of the user's choice as long as it is valid.
 
-    - **1024x768 with ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
-        <img  src="../Images/1024x768-Min-FPS.PNG">
+- **1024x768 with ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
+    <img  src="../Images/1024x768-Min-FPS.PNG">
 
-    - **1024x768 with Visual Quality Tweaks and ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
-        <img  src="../Images/Image-Sharpening-Tweaks.PNG">
+- **1024x768 with Visual Quality Tweaks and ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
+    <img  src="../Images/Image-Sharpening-Tweaks.PNG">
 
-    > [!NOTE]
-    > - ZetaLoader's Borderless Fullscreen implementation must be enabled to use this feature.
-    > - Make sure to adjust **`Text Size`** setting to adjust the HUD size, depending on the display resolution.
-    > - In your GPU's Driver Control Panel:<br>
-    >    - Set the Scaling Mode to "Fullscreen" or "Stretched".
-    >    - Use GPU Scaling for faster display mode switches.
-    > - User Specified Display Mode handles display modes as follows:<br>
-    >   -  Only Landscape orientation based display modes can be used.
-    >   -  If no display mode is specified, the default display mode or display mode stored in the Windows Registry will be used.
+> [!NOTE]
+> - ZetaLoader's Borderless Fullscreen implementation must be enabled to use this feature.
+> - Make sure to adjust **`Text Size`** setting to adjust the HUD size, depending on the display resolution.
+> - In your GPU's Driver Control Panel:<br>
+>    - Set the Scaling Mode to "Fullscreen" or "Stretched".
+>    - Use GPU Scaling for faster display mode switches.
+> - User Specified Display Mode handles display modes as follows:<br>
+>   -  Only Landscape orientation based display modes can be used.
+>   -  If no display mode is specified, the default display mode or display mode stored in the Windows Registry will be used.
 
 > [!NOTE]
 > For more information on the project, view ZetaLoader's GitHub repository.<br>
@@ -189,6 +188,5 @@ This will make Halo Infinite run `1360`x`768` @ `60` Hz with ZetaLoader's Border
     As a fun fact, during ZetaLoader's development it was originally suppose to be used alongside Special K itself.<br> 
     But this idea was quickly ditched due to the complications of compatibility of using Special K.<br>
     With ZetaLoader being to able to function as a standalone modification this allows for it implement things as it sees fit.
-    
     
     
