@@ -40,7 +40,7 @@ Since Special K has an expansive feature set, this section will only be concerne
 > If you want to check or mess with settings within Special-K check out its [wiki](https://wiki.special-k.info).
 
 > [!WARNING]
-> Changing certain settings within Special K could potentially impact performance or cause undefined behavior in the game.<br>
+> Changing certain settings within Special K could potentially impact performance or cause undefined behavior in the game. <br>
 > Because of this, consider referring to Special K's wiki beforehand on a specific feature.
 
 <img src="../Images/SK.png">
