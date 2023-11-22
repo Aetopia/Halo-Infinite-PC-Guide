@@ -141,8 +141,7 @@ Simply remove `dpapi.dll` from Halo Infinite's Installation directory for the ca
 
 ### Configuration
 To configure ZetaLoader, do the following:
-
-
+> [!IMPORTANT]
 > You must restart the game for any configuration file changes to reflect.
 
 1. Go to the following directory: `"%LOCALAPPDATA%\HaloInfinite\Settings"`.
