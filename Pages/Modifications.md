@@ -109,12 +109,6 @@ Fixes jittery mouse input when an external framerate limiter is used.
 
 User Specified Display Mode provides Halo Infinite with the facility to have the game's window run at any arbitrary display mode of the user's choice as long as it is valid.
 
-- **1024x768 with ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
-    <img  src="../Images/1024x768-Min-FPS.PNG">
-
-- **1024x768 with Visual Quality Tweaks and ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
-    <img  src="../Images/Image-Sharpening-Tweaks.PNG">
-
 > [!NOTE]
 > - ZetaLoader's Borderless Fullscreen implementation must be enabled to use this feature.
 > - Make sure to adjust **`Text Size`** setting to adjust the HUD size, depending on the display resolution.
@@ -124,6 +118,14 @@ User Specified Display Mode provides Halo Infinite with the facility to have the
 > - User Specified Display Mode handles display modes as follows:<br>
 >   -  Only Landscape orientation based display modes can be used.
 >   -  If no display mode is specified, the default display mode or display mode stored in the Windows Registry will be used.
+
+- **1024x768 with ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
+    <img  src="../Images/1024x768-Min-FPS.PNG">
+
+- **1024x768 with Visual Quality Tweaks and ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
+    <img  src="../Images/Image-Sharpening-Tweaks.PNG">
+
+
 
 > [!NOTE]
 > For more information on the project, view ZetaLoader's GitHub repository.<br>
