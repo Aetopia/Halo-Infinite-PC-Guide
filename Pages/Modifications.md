@@ -1,6 +1,6 @@
 #  Modifications
 This section covers about modifications for the game that can potentially either help to fix certain technical issues, improve performance or provide QOL features.
-> [!WARNING]
+> [!CAUTION]
 > **One major concern for many would be that the Arbiter Anticheat will kick in and issue punishments.**<br>
 > **The following modifications which have been listed here, have been tested and work totally fine with the anticheat.**<br>
 > **It is advised to use the following with caution and at your own risk.**<br>
@@ -14,19 +14,19 @@ This provides a feature rich toolset which can cater in accordance of your needs
 ## Installation
 There are 2 installation methods:
 
-1. [SKIF (Special K Injection Frontend)](https://wiki.special-k.info/SpecialK/Global#technical-info)
-    > [!IMPORTANT]
-    > **Supported Platforms**
-    > - [x] Steam
-    > - [x] Microsoft Store
+### 1. [SKIF (Special K Injection Frontend)](https://wiki.special-k.info/SpecialK/Global#technical-info)
+> [!IMPORTANT]
+> **Supported Platforms**
+> - [x] Steam
+> - [x] Microsoft Store
 
-2. [Local Install](https://wiki.special-k.info/en/SpecialK/Local) **(⭐ Recommended)**
-    > [!IMPORTANT]
-    > **Supported Platforms**
-    > - [x] Steam
-    > - [ ] Microsoft Store
+### 2. [Local Install](https://wiki.special-k.info/en/SpecialK/Local) **(⭐ Recommended)**
+> [!IMPORTANT]
+> **Supported Platforms**
+> - [x] Steam
+> - [ ] Microsoft Store
 
-
+> [!CAUTION]
 > SKIF's doesn't exclusively inject into games but rather into any process that uses a graphics API and deals with input which means it could potentially trigger anticheats in other games.<br>
 > As mentioned at the beginning of this section **as far as Halo Infinite is concerned the Arbiter Anticheat will not kick in when Special K is being used which also applies to [ZetaLoader](#zetaloader)**.<br>
 > Because of this it is recommended to use a Local Install of Special K exclusively for instances of Halo Infinite.<br>
