@@ -133,9 +133,6 @@ User Specified Display Mode provides Halo Infinite with the facility to have the
 1. Download the latest version of ZetaLoader from [GitHub Releases](https://github.com/Aetopia/ZetaLoader/releases/latest).
 2. Open Halo Infinite's installation directory.
 3. To install ZetaLoader for the campaign and multiplayer, place the dynamic link library in the following folders:<br>
-
-    > [!NOTE]
-    > Since Halo Infinite's campaign and multiplayer are separated both required their own copy of ZetaLoader.
     > - Multiplayer: `"<Installation Directory>\game"`
     > - Campaign: `"<Installation Directory>\subgames\CampaignS1"`
 
