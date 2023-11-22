@@ -112,7 +112,7 @@ To skip the intro videos, we simply replace them with empty files resulting in t
 
 ```powershell
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
-Get-Content  "$(Split-Path $(([string]((Get-ItemPropertyValue `-Path "Registry::HKEY_CLASSES_ROOT\steam\Shell\Open\Command" -Name "(Default)") -Split "-", 2, "SimpleMatch")[0]).Trim().Trim('"')))\config\libraryfolders.vdf" | 
+Get-Content  "$(Split-Path $(([string]((Get-ItemPropertyValue -Path "Registry::HKEY_CLASSES_ROOT\steam\Shell\Open\Command" -Name "(Default)") -Split "-", 2, "SimpleMatch")[0]).Trim().Trim('"')))\config\libraryfolders.vdf" | 
 ForEach-Object {
     $Path = "$($_.Trim().Trim('"path"').Trim().Trim('"').Replace("\\", "\"))\steamapps\common\Halo Infinite\videos" 
     if (Test-Path $Path -ErrorAction SilentlyContinue) { 
