@@ -1,11 +1,5 @@
 #  Modifications
 This section covers about modifications for the game that can potentially either help to fix certain technical issues, improve performance or provide QOL features.
-> [!CAUTION]
-> **One major concern for many would be that the Arbiter Anticheat will kick in and issue punishments.**<br>
-> **The following modifications which have been listed here, have been tested and work totally fine with the anticheat.**<br>
-> **It is advised to use the following with caution and at your own risk.**<br>
-> **If you still have concerns about this, avoid this page entirely.**
-
 
 ## [Special K](https://github.com/SpecialKO/SpecialK)
 Special K is an extension game modifying framework for indepth tweaking of games.<br>
@@ -28,9 +22,7 @@ There are 2 installation methods:
 
 > [!CAUTION]
 > SKIF's doesn't exclusively inject into games but rather into any process that uses a graphics API and deals with input which means it could potentially trigger anticheats in other games.<br>
-> As mentioned at the beginning of this section **as far as Halo Infinite is concerned the Arbiter Anticheat will not kick in when Special K is being used which also applies to [ZetaLoader](#zetaloader)**.<br>
 > Because of this it is recommended to use a Local Install of Special K exclusively for instances of Halo Infinite.<br>
->
 > Read More: https://wiki.special-k.info/SpecialK/Global#technical-info
 
 ### Features
@@ -90,6 +82,14 @@ Fixes issues with the game's borderless fullscreen implementation not filling th
 > |Maximum Framerate| External Framerate Limiter|
 > |Limit Inactive Framerate| Background Application Max Frame Rate (**NVIDIA Only!**)|
 
+> [!IMPORTANT]
+> - ZetaLoader's Borderless Fullscreen forces the game's window to be always on the primary monitor.<br>
+> - To activate the game's window either click on its taskbar button or use <kbd>Alt</kbd> + <kbd>Tab</kbd>.
+> - ZetaLoader's Borderless Fullscreen changes the following game settings at startup:
+>   - Resolution Scale: 100%
+>   - Borderless Fullscreen: Off
+>   - Display Monitor: Primary Monitor
+
 #### 2. Jittery Mouse Input Fix:
 
 Fixes jittery mouse input when an external framerate limiter is used.
@@ -109,20 +109,20 @@ Fixes jittery mouse input when an external framerate limiter is used.
 
 User Specified Display Mode provides Halo Infinite with the facility to have the game's window run at any arbitrary display mode of the user's choice as long as it is valid.
 
-> [!NOTE]
-> - ZetaLoader's Borderless Fullscreen implementation must be enabled to use this feature.
-> - Make sure to adjust **`Text Size`** setting to adjust the HUD size, depending on the display resolution.
-> - In your GPU's Driver Control Panel:<br>
->    - Set the Scaling Mode to "Fullscreen" or "Stretched".
->    - Use GPU Scaling for faster display mode switches.
+> [!TIP]
+> - ZetaLoader's Borderless Fullscreen must be enabled to use this feature.
+> - Adjust Halo Infinite's UI's **`Text Size`**.
+> - In your GPU's Control Panel set the Scaling Mode to **`Fullscreen`**│**`Stretched`**.
 > - User Specified Display Mode handles display modes as follows:<br>
 >   -  Only Landscape orientation based display modes can be used.
->   -  If no display mode is specified, the default display mode or display mode stored in the Windows Registry will be used.
+>   -  If no display mode is specified, the display mode stored in the Windows Registry will be used.
 
 - **1024x768 with ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
+
     <img  src="../Images/1024x768-Min-FPS.PNG">
 
 - **1024x768 with Visual Quality Tweaks and ZetaLoader along with Aggressive Dynamic Resolution Scaling.**
+
     <img  src="../Images/Image-Sharpening-Tweaks.PNG">
 
 
@@ -141,50 +141,36 @@ User Specified Display Mode provides Halo Infinite with the facility to have the
 ### Uninstallation
 Simply remove `dpapi.dll` from Halo Infinite's Installation directory for the campaign and multiplayer.
 
-### Configuration
-To configure ZetaLoader, do the following:
-> [!IMPORTANT]
+## Configuration
+
+> [!IMPORTANT] 
 > You must restart the game for any configuration file changes to reflect.
 
-1. Go to the following directory: `"%LOCALAPPDATA%\HaloInfinite\Settings"`.
+To configure ZetaLoader, do the following:
+1. Go to the following directory: 
+    - `%LOCALAPPDATA%\HaloInfinite\Settings`
 2. Create a new file called `ZetaLoader.ini`, this is ZetaLoader's configuration file.
-3. Add the following contents into the file:<br><br>
+3. Add the following contents into the file:
     ```ini
     [Settings]
-    WindowMode = 0 
+    Fullscreen = 0 
     Width = 0
     Height = 0
-    RefreshRate = 0
+    Frequency = 0
     ```
 
     |Key|Value|
     |-|-|
-    |`WindowMode`|Borderless Fullscreen<br><ul><li>`0` - Disabled</li> <li>`1` - Enabled</li></ol>|
+    |`Fullscreen`|<ul><li>`0` &rarr; Halo Infinite's Window Mode</li><li>`1` &rarr; ZetaLoader's Borderless Fullscreen</li></ol>|
     |`Width`|Display Resolution Width|
     |`Height`|Display Resolution Height|
-    |`RefreshRate`|Display Refresh Rate|
+    |`Frequency`|Display Refresh Rate|
 
-Example:
+This will make Halo Infinite run `1360`x`768` @ `60` Hz with ZetaLoader's Borderless Fullscreen:<br>
 ```ini
 [Settings]
-WindowMode = 1
+Fullscreen = 1
 Width = 1360
 Height = 768
-RefreshRate = 60
-```
-This will make Halo Infinite run `1360`x`768` @ `60` Hz with ZetaLoader's Borderless Fullscreen enabled.
-
-## Frequently Asked Questions
-- **Can I use Special K and ZetaLoader together?**<br>
-    You can use both modifications hand in hand but it not **recommended** due to the following reasons:
-    - ZetaLoader's Borderless Fullscreen will override any window or display management settings configured through Special K.
-    - The settings of the monitor, the game is running on might be altered if any display settings are changed within Special K.
-
-    If you want to use both modifications then simply ensure you don't use ZetaLoader's Borderless Fullscreen or alter any window or display management settings within Special K.
-
-- **Special K has more features so what's the point of ZetaLoader?**<br>
-    As a fun fact, during ZetaLoader's development it was originally suppose to be used alongside Special K itself.<br> 
-    But this idea was quickly ditched due to the complications of compatibility of using Special K.<br>
-    With ZetaLoader being to able to function as a standalone modification this allows for it implement things as it sees fit.
-    
-    
+Frequency = 60
+``` 
