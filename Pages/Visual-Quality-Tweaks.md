@@ -9,31 +9,31 @@ This section is concerned with providing tweaks that can help to enhance the gra
 If you are having an NVIDIA GPU, you may avail the following techonlogies to improve visual quality:<br>
 
 - **NVIDIA Image Sharpening**
-    > [!NOTE]
     > Applies a sharpness filter to the target application to improve visual quality.
     To use image sharpening do the following:<br>
 
     1. Make sure NVIDIA Image Scaling is disabled for Halo Infinite.
     2. Open the Windows Registry Editor:<br>
+    
         1. Go to the following key:<br>
+        
             ```
             HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\nvlddmkm\FTS
             ```
         2. Find a value called `EnableGR535` and set its value to `0`.<br>
+        
             This will replace Image Scaling with Image Sharpening in the NVIDIA Control Panel.
     3. Open up the NVIDIA Control Panel → Manage 3D Settings → Program Settings → Halo Infinite.
     4. Configure the sharpness and film grain values for the game.
 
 - **NVIDIA Image Scaling**
-    > [!NOTE]
-    > This is a proper upscaling technology shipped by the NVIDIA Driver, supposed to be a successor to NVIDIA Image Sharpening.
+    > This is a driver upscaling technology shipped by the NVIDIA Driver, supposed to be a successor to NVIDIA Image Sharpening.
     
     1. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
     2. Enable NVIDIA Image Scaling and also **enable** the overlay indicator.
     3. Configure the sharpness values for the game.
 
 - **Negative LOD Bias**
-    > [!IMPORTANT]
     > This option improves texture quality and **not** image quality, lower the value, the more sharper.
 
     This requires [NVIDIA Profile Inspector](https://github.com/Orbmu2k/nvidiaProfileInspector/releases/latest) to be downloaded.
