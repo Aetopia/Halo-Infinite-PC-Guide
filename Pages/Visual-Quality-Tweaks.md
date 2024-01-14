@@ -10,6 +10,7 @@ If you are having an NVIDIA GPU, you may avail the following techonlogies to imp
 
 - **NVIDIA Image Sharpening**
     > Applies a sharpness filter to the target application to improve visual quality.
+    
     To use image sharpening do the following:<br>
 
     1. Make sure NVIDIA Image Scaling is disabled for Halo Infinite.
@@ -27,7 +28,7 @@ If you are having an NVIDIA GPU, you may avail the following techonlogies to imp
     4. Configure the sharpness and film grain values for the game.
 
 - **NVIDIA Image Scaling**
-    > This is a driver upscaling technology shipped by the NVIDIA Driver, supposed to be a successor to NVIDIA Image Sharpening.
+    > This is a driver upscaling technology shipped with the NVIDIA Display Driver supposed to be a successor to NVIDIA Image Sharpening.
     
     1. Open up the NVIDIA Control Panel, under Manage 3D Settings, Program Settings, select Halo Infinite.
     2. Enable NVIDIA Image Scaling and also **enable** the overlay indicator.
