@@ -11,7 +11,7 @@ Check [Visual Quality Tweaks](Visual-Quality-Tweaks.md) for graphical fidelity t
 
 Simply do the following:
 1. Set your settings preset to `Low`.
-2. If there are any UI/Visual Graphical options that can turned off, **turn them off!**
+2. If there are any UI/Visual Graphical options that can be turned off, **turn them off!**
 
 ## Removal of High Resolution Texture Packs
 > [!IMPORTANT]
