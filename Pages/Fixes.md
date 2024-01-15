@@ -13,7 +13,7 @@ If you are crashing continuously when starting up Halo Infinite then the followi
 ### Why is the game crashing?
 The reason seems to be [access violations](# "An access violation simply means the game was trying to access an invalid memory address.") causing the game to crash.
 
-The issue also seems to lie within the application manifest (An application manifest is additional metadata that dictates how Windows should handle an application's startup.).
+The issue also seems to lie within the [application manifest](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-manifests, "An application manifest is additional metadata that dictates how Windows should handle an application's startup.").
 
 In particular the [**`<heapType>`**](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-manifests#heaptype) attribute seems to be causing this issue.
 
