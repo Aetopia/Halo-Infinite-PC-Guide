@@ -20,7 +20,7 @@ In particular the [**`<heapType>`**](https://learn.microsoft.com/en-us/windows/w
 [You may check this reddit post for more details.](https://www.reddit.com/r/halo/comments/17ff7dc/potential_fix_for_crashing_upon_halo_infinite/)
 
 ### Fix
-Run the following commands in a PowerShell window to patch the Multiplayer's Instance's Application Manifest.
+Run the following commands in a PowerShell window to patch the Multiplayer Executable's Application Manifest.
 
 Here the following is happening:
 1. The original application manifest is obtained from the multiplayer instance.
