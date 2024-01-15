@@ -88,7 +88,6 @@ Fixes issues with the game's borderless fullscreen implementation not filling th
 > - ZetaLoader's Borderless Fullscreen changes the following game settings at startup:
 >   - Resolution Scale: 100%
 >   - Borderless Fullscreen: Off
->   - Display Monitor: Primary Monitor
 
 #### 2. Jittery Mouse Input Fix:
 
