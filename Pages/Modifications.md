@@ -63,24 +63,21 @@ A tiny and open source modification/patch for Halo Infinite that aims to fix and
 #### 1. Borderless Fullscreen:<br>
 Fixes issues with the game's borderless fullscreen implementation not filling the screen correctly at certain resolutions.
 
-> [!WARNING]
-> **Due to the way, how ZetaLoader implements Borderless Fullscreen, the following options will not work properly**:
->
-> |Setting|
-> |-|
-> |Display Monitor|
-> |Limit Inactive Framerate|
-> |Inactive Mute|
-> |V-Sync|
-> |Maximum Framerate|
->
-> Because of this, consider using alternatives for the options listed here:
->
-> |Setting|Alternative|
+> [!WARNING] 
+> ZetaLoader's Borderless Fullscreen renders the following options unusable:<br>
+> - Display Monitor
+> - Limit Inactive Framerate
+> - Inactive Mute
+> - V-Sync
+> - Maximum Framerate
+> 
+> Because of this consider using alternatives for the following:
+> |Option|Alternative(s)|
 > |-|-|
-> |V-Sync|Driver Based V-Sync|
-> |Maximum Framerate| External Framerate Limiter|
-> |Limit Inactive Framerate| Background Application Max Frame Rate (**NVIDIA Only!**)|
+> |V-Sync|<ul><li>Driver V-Sync</li><li>[Special K's V-Sync](https://wiki.special-k.info/en/Advanced/Video#vertical-sync-vsync)|
+> |Maximum Framerate|External Framerate Limiter|
+> |Limit Inactive Framerate|<ul><li>[NVIDIA's Background Application Max Frame Rate](https://www.nvidia.com/content/Control-Panel-Help/vLatest/en-us/mergedProjects/nv3d/Manage_3D_Settings_(reference).htm)</li><li>[Special K's Framerate Limiter](https://wiki.special-k.info/en/Advanced/Video#frame-rate-limiter)</li>|
+> |Inactive Mute| [Special K's Mute the game when focus is lost](https://wiki.special-k.info/en/Advanced/Audio#mute-the-game-when-focus-is-lost)|
 
 > [!IMPORTANT]
 > - ZetaLoader's Borderless Fullscreen forces the game's window to be always on the primary monitor.<br>
