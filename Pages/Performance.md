@@ -19,7 +19,7 @@ Simply do the following:
 > - [x] Steam
 > - [x] Microsoft Store
 
-The High Resolution Texture Packs ship with the game are know to cause stuttering & performance issues.
+The High Resolution Texture Packs ship with the game are known to cause stuttering & performance issues.
 
 1. On the title screen, go to the Control Panel.
 2. Select "Manage Game" from the Control Panel.
