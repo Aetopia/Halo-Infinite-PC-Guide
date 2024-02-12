@@ -7,6 +7,8 @@ This section is concerned with addressing certain technical issues affecting Hal
 > - [x] Steam
 > - [ ] Microsoft Store
 
+> [!CAUTION]
+> This fix is meant to address to crashing issues for Season 5: Reckoning specifically.
 
 If you are crashing continuously when starting up Halo Infinite then the following fix might help.
 
@@ -99,16 +101,16 @@ ForEach-Object {
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
 ```
 
-## Skipping Intro Videos
+## Skipping Intro Video
 > [!IMPORTANT]
 > **Supported Platforms**
 > - [x] Steam
 > - [ ] Microsoft Store
 
-This fix will allow you to skip any intro videos, the game plays at startup.
+This fix will allow you to skip the intro video, the game plays at startup.
 
 ### Fix
-To skip the intro videos, we simply replace them with empty files resulting in the videos to be skipped.
+To skip the intro video, we simply replace it with an empty file resulting in the video to be skipped.
 
 ```powershell
 $ProgressPreference = $ErrorActionPreference = "SilentlyContinue"
@@ -116,8 +118,7 @@ Get-Content  "$(Split-Path $(([string]((Get-ItemPropertyValue -Path "Registry::H
 ForEach-Object {
     $Path = "$($_.Trim().Trim('"path"').Trim().Trim('"').Replace("\\", "\"))\steamapps\common\Halo Infinite\videos" 
     if (Test-Path $Path -ErrorAction SilentlyContinue) { 
-        @("intro.mp4" , "Startup_Sequence_Loading.mp4") |
-        ForEach-Object { [void](New-Item "$Path\$_" -Force) }
+        [void](New-Item "$Path\intro.mp4" -Force)
     }
 }
 $ProgressPreference = $ErrorActionPreference = "Continue"

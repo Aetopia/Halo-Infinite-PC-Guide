@@ -21,6 +21,7 @@ Special K is a game modifying framework for tweaking/configuring games.
 - [Latent Sync](https://wiki.special-k.info/en/Advanced/Video#latent-sync)<br>
     Software Based Variable Refresh Rate in a nutshell.
 
+
 ### Installation
 Special K offers 2 options for installation:
 - [Local](https://wiki.special-k.info/en/SpecialK/Local#set-up-a-local-install)
