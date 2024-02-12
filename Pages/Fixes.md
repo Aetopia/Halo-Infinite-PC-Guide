@@ -8,7 +8,7 @@ This section is concerned with addressing certain technical issues affecting Hal
 > - [ ] Microsoft Store
 
 > [!CAUTION]
-> This fix is meant to address to crashing issues for Season 5: Reckoning specifically.
+> This fix is meant to address to crashing issues for **`Season 5: Reckoning`** specifically.
 
 If you are crashing continuously when starting up Halo Infinite then the following fix might help.
 
