@@ -42,7 +42,7 @@ A modification to fix technical issues with Halo Infinite on PC.
 
 ### Features
 - [Borderless Fullscreen](https://github.com/Aetopia/ZetaLoader#borderless-fullscreen)<br>
-    Borderless Fullscreen designed to accommodate [User Specified Display Mode](https://github.com/Aetopia/ZetaLoader#user-specified-display-mode).<br>Providing a Pseudo Fullscreen Exclusive experience.
+    Provides a Pseudo Fullscreen Exclusive experience.
 
 - [User Specified Display Mode](https://github.com/Aetopia/ZetaLoader#user-specified-display-mode)<br>
     Provides a facility to use any arbitrary display mode.
