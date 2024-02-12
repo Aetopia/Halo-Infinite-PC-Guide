@@ -31,26 +31,14 @@ Special K offers 2 options for installation:
 > Because of this it is recommended to use a Local Install of Special K exclusively for instances of Halo Infinite.<br>
 
 ## [ZetaLoader](https://github.com/Aetopia/ZetaLoader)
-
-> [!IMPORTANT]
-> **Supported Platforms**
-> - [x] Steam
-> - [ ] Microsoft Store
-
-
 A modification to fix technical issues with Halo Infinite on PC.
 
 ### Features
 - [Borderless Fullscreen](https://github.com/Aetopia/ZetaLoader#borderless-fullscreen)<br>
-    Borderless Fullscreen designed to accommodate [User Specified Display Mode](https://github.com/Aetopia/ZetaLoader#user-specified-display-mode).<br>Providing a Pseudo Fullscreen Exclusive experience.
+    Borderless Fullscreen designed to accommodate [User Specified Display Mode](https://github.com/Aetopia/ZetaLoader#user-specified-display-mode).<br>
 
 - [User Specified Display Mode](https://github.com/Aetopia/ZetaLoader#user-specified-display-mode)<br>
     Provides a facility to use any arbitrary display mode.
 
 - [Jittery Mouse Input Fix](https://github.com/Aetopia/ZetaLoader#jittery-mouse-input-fx)<br>
     Resolves jittery mouse input caused by external framerate limiters.
-
-### Installation
-ZetaLoader offers 2 installation methods:<br>
-- [Automated](https://github.com/Aetopia/ZetaLoader#automated)
-- [Manual](https://github.com/Aetopia/ZetaLoader#manual)
