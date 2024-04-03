@@ -1,4 +1,7 @@
 # Modifications
+> [!WARNING]
+> With the CU31 update, it is no longer possible to load in dynamic link libraries due to EAC!
+
 This section covers about modifications for the game that can potentially either help to fix certain technical issues, improve performance or provide QOL features.
 
 
