@@ -46,7 +46,7 @@ If you are having an NVIDIA GPU, you may avail the following techonlogies to imp
 
         |Setting|Value|
         |-|-|
-        |Antialiasing - Transparency Supersampling|2x Sparse Grid Supersampling|
+        |Antialiasing - Transparency Supersampling|`AA_MODE_REPLAY_MODE_ALL`|
         |Texture Filtering - LOD Bias (DX)| Anywhere between `0` ~ `-3`|
     3. Save the profile.
 
